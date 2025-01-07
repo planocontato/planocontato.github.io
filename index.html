@@ -4,84 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Plano Contatos</title>    
-
+    <title>Plano Contatos</title>
     <link rel="shortcut icon" href="img/Logo plano.ico">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_email.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
+    <!-- Cabeçalho -->
     <header>
-        <div class="porfile">
-            <img src="img/Logo.jpeg" alt="Plano Informática logotipo" class="logo">
+        <div class="profile">
+            <img src="img/Logo.jpeg" alt="Logotipo da Plano Informática" class="logo">
             <h1>Plano Informática</h1>
-            <h3>Rua Benedito Von Rondon, 78 - Sala 100 - Manhuaçu - MG</h3>
+            <address>
+                Rua Benedito Von Rondon, 78 - Sala 100<br>
+                Manhuaçu - MG
+            </address>
         </div>
     </header>
-
-    <section class="icons">    
-        <div class="social">
-            <li>
-                <a href="whats.html">
-                    <img src="img/whatsapp.svg" alt="Whatsapp">
-                </a>
-            </li>
-            <li>
-                <a href="telefone.html">
-                    <img src="img/tel.png" alt="Telefone">
-                </a>
-            </li>
-            <li>
-                <a href="email.html">
-                    <img src="img/email.png" alt="Email">
-                </a>
-            </li>
-            
-            <li>
-                <a href="https://www.google.com/maps/place/R.+Benedito+Von+Rondon,+78+-+Manhua%C3%A7u,+MG,+36900-000/@-20.262755,-42.026726,15z/data=!4m5!3m4!1s0xbb0270fac789c7:0xc05dfe00d24a8cf4!8m2!3d-20.262755!4d-42.0267264?hl=pt-BR" target="_blank"">
-                    <img src="img/maps.png" alt="Mapa">
-                </a>
-            </li>
-        </div>
-    </section>
-
-    <section class="container">
+    
+    <!-- Seção principal -->
+    <main class="container">
         <ul class="link-list">
             <li>
-                <a href="whats.html" class="active">
-                    WhatsApp 
-                    <span>Fale com gente pelo WhatsApp (<i>não diponível para chamadas, apenas mensagens</i>).</span>
+                <a href="whats.html" class="modern-button" aria-label="WhatsApp">                    
+                    WhatsApp
+                    <span>Fale conosco pelo WhatsApp (apenas mensagens).</span>
                 </a>
             </li>
             <li>
-                <a href="telefone.html" class="active">
+                <a href="telefone.html" class="modern-button" aria-label="Telefone">                    
                     Telefone
                     <span>Ligue para nossa central de atendimento.</span>
                 </a>
             </li>
             <li>
-                <a href="email.html"  class="active">
+                <a href="email.html" class="modern-button" aria-label="Email">                    
                     Email
                     <span>Veja nossos emails de contato.</span>
                 </a>
             </li>
-                                 
-    </section>
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.9055876937537!2d-42.02891508541564!3d-20.26274995397443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbb0270fac789c7%3A0xc05dfe00d24a8cf4!2sR.%20Benedito%20Von%20Rondon%2C%2078%20-%20Manhua%C3%A7u%2C%20MG%2C%2036900-000!5e0!3m2!1spt-BR!2sbr!4v1660760109938!5m2!1spt-BR!2sbr" width="90%" height="250px" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
         </ul>
-    
+
+        <!-- Mapa -->
+        <div class="loading-map">Carregando mapa...</div>
+        <iframe 
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d556.386987249636!2d-42.027077204551276!3d-20.26254596188697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbb027102504ae3%3A0x96bf863fb9e47662!2sPlano%20Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1736169264656!5m2!1spt-BR!2sbr"
+            title="Localização no Google Maps"
+            loading="lazy"
+            onload="this.previousElementSibling.style.display='none'">
+        </iframe>
+    </main>
+
+    <!-- Rodapé -->
     <footer class="container">
-        <p>©All Rights Reserved | Design by JP-Soluções</p>
+        <p>© Todos os direitos reservados | Design por JP-Soluções</p>
+        <nav>
+            <a href="privacidade.html">Política de Privacidade</a> |
+            <a href="termos.html">Termos de Uso</a>
+        </nav>
     </footer>
 
+    <script src="js/script_email.js"></script>
 </body>
 </html>
